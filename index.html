@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Shabiba! 💖</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="background-hearts"></div>
+    
+    <!-- Cursor Trail -->
+    <div class="cursor-trail"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Princess Crown -->
+        <div class="princess-crown">
+            <div class="crown-icon">💖</div>
+            <div class="sparkles">✨✨✨</div>
+        </div>
+        
+        <!-- Main Title -->
+        <h1 class="main-title">Happy Birthday Shabiba! 💕</h1>
+        
+        <!-- Date Banner -->
+        <div class="date-banner">
+            <div class="date-item">5</div>
+            <div class="date-item">February</div>
+            <div class="date-item">2026</div>
+        </div>
+        
+        <!-- Nickname Cloud -->
+        <div class="nickname-cloud">
+            <div class="cloud-bubble">My Sunshine ☀️</div>
+            <div class="cloud-bubble">My Moonlight 🌙</div>
+            <div class="cloud-bubble">My Sweet Destiny 💫</div>
+            <div class="cloud-bubble">My Always & Forever 💞</div>
+        </div>
+        
+        <!-- Greeting Text -->
+        <div class="greeting" id="greetingText"></div>
+        
+        <!-- Love Meter -->
+        <div class="love-meter">
+            <div class="meter-label">How Much I Love You:</div>
+            <div class="meter-container">
+                <div class="meter-fill" id="loveMeter"></div>
+            </div>
+            <div class="meter-text" id="loveText">💖 INFINITY 💖</div>
+        </div>
+        
+        <!-- Birthday Countdown -->
+        <div class="countdown-container">
+            <div class="countdown-title" id="countdownTitle">Counting down to the best day:</div>
+            <div class="countdown-timer">
+                <div class="time-unit">
+                    <div class="time-value" id="countdownDays">00</div>
+                    <div class="time-label">Days</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-unit">
+                    <div class="time-value" id="countdownHours">00</div>
+                    <div class="time-label">Hours</div>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-unit">
+                    <div class="time-value" id="countdownMinutes">00</div>
+                    <div class="time-label">Minutes</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- Music Player -->
+        <div class="music-player">
+            <button id="musicToggle" class="music-button">
+                <span class="music-icon">🎵</span>
+                <span class="music-text">Play Song</span>
+            </button>
+            <div class="volume-control">
+                <i class="fas fa-volume-down"></i>
+                <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                <i class="fas fa-volume-up"></i>
+            </div>
+        </div>
+        
+        <!-- Secret Message -->
+        <div class="secret-note">
+            <div class="note-icon">💌</div>
+            <p class="note-text">Click anywhere for surprises! 🤫</p>
+        </div>
+        
+        <!-- Progress Indicator -->
+        <div class="progress-indicator">
+            <div class="progress-dot active"></div>
+            <div class="progress-dot"></div>
+            <div class="progress-dot"></div>
+        </div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container"></div>
+
+    <!-- Audio Element -->
+    <audio id="birthdayAudio" loop>
+        <source src="music/birthday-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Action Button -->
+        <button class="cta-button" id="surpriseButton">
+            <span class="button-text">Open Your Birthday Surprise! ✨</span>
+            <span class="button-sparkle">💫</span>
+        </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
